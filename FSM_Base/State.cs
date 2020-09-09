@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Evazero.Player.FSM
+namespace ChangeToYourNamespace
 {
     [CreateAssetMenu(menuName = "Evazero/Player/FSM/State")]
     public class State : ScriptableObject

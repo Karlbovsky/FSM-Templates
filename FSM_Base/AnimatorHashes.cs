@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Evazero.Player.FSM
+namespace ChangeToYourNamespace
 {
     public class AnimatorHashes
     {

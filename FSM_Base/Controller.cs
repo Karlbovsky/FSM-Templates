@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 
-namespace Evazero.Player.FSM
+namespace ChangeToYourNamespace
 {
     public class Controller : MonoBehaviour
     {

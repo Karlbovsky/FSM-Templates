@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Evazero.Player.FSM
+namespace ChangeToYourNamespace
 {
     [System.Serializable]
     public class Transition
