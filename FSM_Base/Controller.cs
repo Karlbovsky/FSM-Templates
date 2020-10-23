@@ -24,6 +24,10 @@ namespace ChangeToYourNamespace
         {
             _transform = this.transform;
             AnimatorHashes = new AnimatorHashes();
+            
+            //(optional)call OnEnter @ start    
+            if (CurrentState != null)
+                CurrentState.OnEnter(this);
         }
         private void Update()
         {
