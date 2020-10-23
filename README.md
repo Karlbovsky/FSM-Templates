@@ -4,8 +4,6 @@
 ```
 Folder PATHs 
 +---FSM
-|   |   Implementation.meta
-|   |   Scripts.meta
 |   |   
 |   +---Implementation
 |   |   |   Conditions.meta
@@ -27,11 +25,7 @@ Folder PATHs
 |           Transition.cs
 |           Transition.cs.meta
 |           
-\---Scripts
-        NPCEntity.cs
-        NPCEntity.cs.meta
-        NPCUnitsManager.cs
-        NPCUnitsManager.cs.meta
+\...
 ```
 
 
