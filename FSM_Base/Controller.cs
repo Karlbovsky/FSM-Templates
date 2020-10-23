@@ -15,6 +15,7 @@ namespace ChangeToYourNamespace
         [HideInInspector]
         public float Delta;
         public bool UpdateEnabled;
+        private float _timer;
         private void Awake()
         {
             Agent = GetComponent<NavMeshAgent>();
@@ -24,7 +25,7 @@ namespace ChangeToYourNamespace
         {
             _transform = this.transform;
             AnimatorHashes = new AnimatorHashes();
-            
+             _timer = 0f;
             //(optional)call OnEnter @ start    
             if (CurrentState != null)
                 CurrentState.OnEnter(this);
@@ -45,6 +46,21 @@ namespace ChangeToYourNamespace
             CurrentState.OnEnter(this);
 
             UpdateEnabled = true;
+        }
+        //useful for FSM components to have time related logics
+        public bool TimeElapsed(float secondsToWait)
+        {
+            if (_timer < secondsToWait)
+            {
+                _timer += 1 * Delta;
+            }
+            else
+            {
+                _timer = 0;
+                return true;
+            }
+
+            return false;
         }
     }
 }
