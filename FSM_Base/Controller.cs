@@ -37,6 +37,12 @@ namespace ChangeToYourNamespace
             if (UpdateEnabled)
                 CurrentState?.Tick(this);
         }
+        /**
+            Useful if we want to change state via an xternal script/component.
+            WE can grab the reference to this controller in another component and
+            force a state transition when needed. This allows to have a more generic 
+            controller. It can be used with differents system/component types.
+        */
         public void ForceTransition(State newState)
         {
             UpdateEnabled = false;
